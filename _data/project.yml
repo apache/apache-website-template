@@ -1,0 +1,33 @@
+# Apache Project configurations
+
+#
+name: Apache SystemML (incubating)
+short_name: SystemML
+description: Apache SystemML is a distributed and declarative machine learning platform.
+
+download: http://www.github.com/SparkTC/systemml/releases
+
+dev_list: dev@systemml.incubator.apache.org
+dev_list_subscribe: dev-subscribe@systemml.incubator.apache.org
+dev_list_unsubscribe: dev-unsubscribe@systemml.incubator.apache.org
+dev_list_archive: http://mail-archives.apache.org/mod_mbox/systemml-dev/
+dev_list_archive_mailarchive: https://www.mail-archive.com/dev@systemml.incubator.apache.org/
+dev_list_archive_markmail:
+
+user_list:
+user_list_subscribe:
+user_list_unsubscribe:
+user_list_archive:
+user_list_archive_mailarchive:
+user_list_archive_markmail:
+
+commits_list: commits@systemml.incubator.apache.org
+commits_list_subscribe: commits-subscribe@systemml.incubator.apache.org
+commits_list_unsubscribe: commits-unsubscribe@systemml.incubator.apache.org
+commits_list_archive: http://mail-archives.apache.org/mod_mbox/systemml-commits/
+commits_list_archive_mailarchive: https://www.mail-archive.com/commits@systemml.incubator.apache.org/
+commits_list_archive_markmail:
+
+jira: SYSTEMML
+
+source_repository: http://www.github.com/SparkTC/systemml
