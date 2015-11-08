@@ -31,3 +31,5 @@ commits_list_archive_markmail:
 jira: SYSTEMML
 
 source_repository: http://www.github.com/SparkTC/systemml
+
+podling: true
