@@ -13,6 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# emacs
-*~
+# Database of contributors to Apache Foo.
+# Pages such as community.md use this data.
+#
+- name: Julian Hyde
+  apacheId: jhyde
+  githubId: julianhyde
+  org: Hortonworks
+  role: Contributor
+  homepage: http://people.apache.org/~jhyde
+- name: Luciano Resende
+  apacheId: lresende
+  githubId: lresende
+  org: IBM
+  role: PMC
+# End contributors.yml
