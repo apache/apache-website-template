@@ -13,17 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-markdown: kramdown
-permalink: /news/:year/:month/:day/:title/
-excerpt_separator: ""
-
-repository: https://github.com/apache/apache-website-template
-destination: target
-exclude: [README.md,Gemfile*]
-keep_files: [".git", ".svn", "apidocs"]
-
-# The base path where the website is deployed
-baseurl:
-
-# End _config.yml
-
+.sass-cache
+Gemfile.lock
+target
