@@ -57,9 +57,9 @@ Enhancement requests for new features are also welcome. The more concrete and ra
 
 ### Source Code
 
-The project sources are accessible via the [source code repository]({{ site.data.project.source_repository }})
+The project sources are accessible via the [source code repository]({{ site.data.project.source_repository }}) which is also mirrored in [GitHub]({{ site.data.project.source_repository_mirror }})
 
 
+### Website Source Code
 
-
-
+The project website sources are accessible via the [website source code repository]({{ site.data.project.website_repository }}) which is also mirrored in [GitHub]({{ site.data.project.website_repository_mirror }})

@@ -30,6 +30,10 @@ commits_list_archive_markmail:
 
 jira: SYSTEMML
 
-source_repository: https://github.com/apache/incubator-systemml
+source_repository: https://git-wip-us.apache.org/repos/asf/incubator-systemml.git
+source_repository_mirror: https://github.com/apache/incubator-systemml
+
+website_repository: https://git-wip-us.apache.org/repos/asf/incubator-systemml-website.git
+website_repository_mirror: https://github.com/apache/incubator-systemml-website
 
 podling: true
