@@ -6,6 +6,8 @@ group: nav-right
 ---
 {% include JB/setup %}
 
+<br/><br/><br/>
+
 ### {{ site.data.project.short_name }} Mentors
 
 {% if site.data.mentors %}
