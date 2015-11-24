@@ -13,15 +13,14 @@
           </a>
         </div>
         <nav class="navbar-collapse collapse" role="navigation">
-          <ul class="nav navbar-nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'nav-left' %}
-            {% include JB/pages_list %}
-          </ul>
           <ul class="nav navbar-nav navbar-right">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'nav-right' %}
-            {% include JB/pages_list %}
+            <li id="community">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Community<b class="caret"></b></a>
+                <ul class="dropdown-menu dropdown-left">
+                    <li><a href="/community.html">Get Involved</a></li>
+                    <li><a href="/community-members">Who we are</a></li>
+                </ul>
+            </li>
             <li><a href="{{ site.data.project.source_repository }}">GitHub</a></li>
             <li id="apache">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">Apache<b class="caret"></b></a>
@@ -30,7 +29,7 @@
                 <li><a href="http://www.apache.org/licenses/">Apache License</a></li>
                 <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
                 <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
-            </ul>
+                </ul>
             </li>
           </ul>
         </nav><!--/.navbar-collapse -->
