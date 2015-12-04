@@ -40,6 +40,13 @@ You can:
 
 Visit the [Contributing] page for more information.
 
+### Project Members
+
+Name (Apache ID) | Github | Org | Role
+:--------------- | :----- | :-- | :---
+{% for c in site.data.contributors %}  {{ c.name }} (<a href="http://people.apache.org/committer-index#{{ c.apacheId }}">{{ c.apacheId }}</a>) | <a href="http://github.com/{{ c.githubId }}"><img width="64" src="{% unless c.avatar %}http://github.com/{{ c.githubId }}.png{% else %}{{ c.avatar }}{% endunless %}"></a> | {{ c.org }} | {{ c.role }}
+{% endfor %}
+
 ### Mailing list
 
 Get help using {{ site.data.project.short_name }} or contribute to the project on our mailing lists:

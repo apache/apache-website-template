@@ -13,15 +13,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-- name: Luciano Resende
-  apache_id: lresende
+# Database of contributors to Apache Foo.
+# Pages such as community.md use this data.
+# Please keep the list in alphabetical order.
+#
+- name: DB Tsai
+  apacheId: dbtsai
+  githubId: dbtsai
+  role: PMC
+  affiliation: Netflix
 
-- name: Patrick Wendell
-  apache_id: pwendell
+- name: Julian Hyde
+  apacheId: jhyde
+  githubId: julianhyde
+  org: Hortonworks
+  role: Contributor
+  homepage: http://people.apache.org/~jhyde
+
+- name: Luciano Resende
+  apacheId: lresende
+  githubId: lresende
+  org: IBM
+  role: Committer
 
 - name: Reynold Xin
-  apache_id: rxin
+  apacheId: rxin
+  githubId: rxin
+  org: Databricks
+  role: Mentor
 
 - name: Rich Bowen
-  apache_id: rbowen
+  apacheId: rbowen
+  githubId: rbowen
+  org:
+  role: Mentor
 
+# End contributors.yml
