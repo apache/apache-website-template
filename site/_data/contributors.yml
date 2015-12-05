@@ -21,7 +21,7 @@
   apacheId: dbtsai
   githubId: dbtsai
   role: PMC
-  affiliation: Netflix
+  org: Netflix
 
 - name: Julian Hyde
   apacheId: jhyde
@@ -34,13 +34,13 @@
   apacheId: lresende
   githubId: lresende
   org: IBM
-  role: Committer
+  role: Committer and Mentor
 
 - name: Reynold Xin
   apacheId: rxin
   githubId: rxin
   org: Databricks
-  role: Mentor
+  role: Committer and Mentor
 
 - name: Rich Bowen
   apacheId: rbowen

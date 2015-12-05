@@ -27,36 +27,21 @@ limitations under the License.
 
 <br/><br/><br/>
 
-### {{ site.data.project.short_name }} Mentors
-
-{% if site.data.mentors %}
-<table class="table table-hover">
-    <tr>
-        <th><b>ID</b></th><th><b>Full Name</b></th>
-    </tr>
-    {% for mentor in site.data.mentors %}
-        <tr>
-        <td>{{mentor.apache_id}}</td>
-        <td>{{mentor.name}}</td>
-        </tr>
-    {% endfor %}
-</table>
-{% endif %}
-
-
 ### {{ site.data.project.short_name }} Team Members
 
-{% if site.data.members %}
+{% if site.data.contributors %}
 <table class="table table-hover">
     <tr>
-        <th><b>ID</b></th><th><b>Full Name</b></th><th><b>PMC</b></th><th><b>Affiliation</b></th>
+        <th><b></b></th><th><b>Full Name</b></th><th><b>Apache ID</b></th><th><b>GitHub</b><th><b>Role</b></th><th><b>Affiliation</b></th>
     </tr>
-    {% for member in site.data.members %}
+    {% for member in site.data.contributors %}
         <tr>
-        <td>{{member.apache_id}}</td>
+        <td><a href="http://github.com/{{ member.githubId }}"><img width="64" src="{% unless c.avatar %}http://github.com/{{ member.githubId }}.png{% else %}{{ member.avatar }}{% endunless %}"></a></td>
         <td>{{member.name}}</td>
-        <td>{{member.pmc}}</td>
-        <td>{{member.affiliation}}</td>
+        <td>{{member.apacheId}}</td>
+        <td><a href="http://github.com/{{ member.githubId }}">{{ member.githubId }}</a></td>
+        <td>{{member.role}}</td>
+        <td>{{member.org}}</td>
         </tr>
     {% endfor %}
 </table>
