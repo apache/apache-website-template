@@ -22,7 +22,7 @@ incubator_name: incubator-systemml
 incubator_slash_name: incubator/systemml
 description: Apache SystemML is a distributed and declarative machine learning platform.
 
-download: /download.html
+download: /download
 
 dev_list: dev@systemml.incubator.apache.org
 dev_list_subscribe: dev-subscribe@systemml.incubator.apache.org
