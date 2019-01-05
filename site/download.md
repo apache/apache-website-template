@@ -28,48 +28,50 @@ limitations under the License.
 
 {{ site.data.project.name }} is released as a source artifact, and also through Maven.
 
-### Source releases
+### Release Artifacts
 
-Release          | Date       | Commit   | Download
-:--------------- | :--------- | :------- | :-------
-{% for post in site.categories.release %}{% comment %}
-{% endcomment %}{% if post.fullVersion %}{% comment %}
-{% endcomment %}{% assign v = post.fullVersion %}{% comment %}
-{% endcomment %}{% else %}{% comment %}
-{% endcomment %}{% capture v %}apache-{{ site.data.project.unix_name }}-{{ post.version }}{% endcapture %}{% comment %}
-{% endcomment %}{% endif %}{% comment %}
-{% endcomment %}{% if forloop.index0 < 2 %}{% comment %}
-{% endcomment %}{% capture p %}http://www.apache.org/dyn/closer.lua?filename={{ site.data.project.unix_name }}/{{ v }}{% endcapture %}{% comment %}
-{% endcomment %}{% assign q = "&action=download" %}{% comment %}
-{% endcomment %}{% assign d = "https://www.apache.org/dist" %}{% comment %}
-{% endcomment %}{% else %}{% comment %}
-{% endcomment %}{% capture p %}http://archive.apache.org/dist/incubator/{{ site.data.project.unix_name }}/{{ v }}{% endcapture %}{% comment %}
-{% endcomment %}{% assign q = "" %}{% comment %}
-{% endcomment %}{% assign d = "https://archive.apache.org/dist/incubator" %}{% comment %}
-{% endcomment %}{% endif %}{% comment %}
-{% endcomment %}<a href="{{ site.baseurl }}/history.html#{{ post.tag }}">{{ post.version }}</a>{% comment %}
-{% endcomment %} | {{ post.date | date_to_string }}{% comment %}
-{% endcomment %} | <a href="https://github.com/apache/{{ site.data.project.unix_name }}/commit/{{ post.sha }}">{{ post.sha }}</a>{% comment %}
-{% endcomment %} | <a href="{{ p }}/{{ v }}-src.tar.gz{{ q }}">tar</a>{% comment %}
-{% endcomment %} (<a href="{{ d }}/{{ site.data.project.unix_name }}/{{ v }}/{{ v }}-src.tar.gz.md5">md5</a>{% comment %}
-{% endcomment %} <a href="{{ d }}/{{ site.data.project.unix_name }}/{{ v }}/{{ v }}-src.tar.gz.asc">pgp</a>){% comment %}
-{% endcomment %} {% raw %}<br>{% endraw %}{% comment %}
-{% endcomment %} <a href="{{ p }}/{{ v }}-src.zip{{ q }}">zip</a>{% comment %}
-{% endcomment %} (<a href="{{ d }}/{{ site.data.project.unix_name }}/{{ v }}/{{ v }}-src.zip.md5">md5</a>{% comment %}
-{% endcomment %} <a href="{{ d }}/{{ site.data.project.unix_name }}/{{ v }}/{{ v }}-src.zip.asc">pgp</a>){% comment %}
-{% endcomment %}
-{% endfor %}
+<table class="table table-hover sortable">
+    <thead>
+        <tr>
+            <th><b>Name</b></th>
+            <th><b>Archive</b></th>
+            <th><b>SHA-512</b></th>
+            <th><b>Signature</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (tar.gz)</td>
+            <td><a href="http://www.apache.org/dyn/closer.lua/{{site.data.project.incubator_slash_name}}/{{site.data.project.latest_release}}/{{site.data.project.unix_name}}/{{site.data.project.unix_name}}-{{site.data.project.latest_release}}-bin.tar.gz">tar.gz</a></td>
+            <td><a href="http://www.apache.org/dist/{{site.data.project.incubator_slash_name}}/{{site.data.project.latest_release}}/{{site.data.project.unix_name}}/{{site.data.project.unix_name}}-{{site.data.project.latest_release}}-bin.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://www.apache.org/dist/{{site.data.project.incubator_slash_name}}/{{site.data.project.latest_release}}/{{site.data.project.unix_name}}/{{site.data.project.unix_name}}-{{site.data.project.latest_release}}-bin.tar.gz.asc">ASC</a></td>
+        </tr>
+        <tr>
+            <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (source tar.gz)</td>
+            <td><a href="http://www.apache.org/dyn/closer.lua/{{site.data.project.incubator_slash_name}}/{{site.data.project.latest_release}}/{{site.data.project.unix_name}}/{{site.data.project.unix_name}}-{{site.data.project.latest_release}}-src.tar.gz">tar.gz</a></td>
+            <td><a href="http://www.apache.org/dist/{{site.data.project.incubator_slash_name}}/{{site.data.project.latest_release}}/{{site.data.project.unix_name}}/{{site.data.project.unix_name}}-{{site.data.project.latest_release}}-src.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://www.apache.org/dist/{{site.data.project.incubator_slash_name}}/{{site.data.project.latest_release}}/{{site.data.project.unix_name}}/{{site.data.project.unix_name}}-{{site.data.project.latest_release}}-src.tar.gz.asc">ASC</a></td>
+        </tr>
+        <!--tr>
+            <td>Release Notes</td>
+            <td><a href="/releases/spark/{{ site.data.project.latest_release }}/release-notes">{{ site.data.project.latest_release }}</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr-->
+    </tbody>
+</table>
 
 Choose a source distribution in either *tar* or *zip* format,
 and [verify](http://www.apache.org/dyn/closer.cgi#verify)
 using the corresponding *pgp* signature (using the committer file in
-[KEYS](http://www.apache.org/dist/{{ site.data.project.unix_name }}/KEYS)).
+[KEYS](http://www.apache.org/dist/{{ site.data.project.incubator_slash_name }}/KEYS)).
 If you cannot do that, the *md5* hash file may be used to check that the
 download has completed OK.
 
 For fast downloads, current source distributions are hosted on mirror servers;
 older source distributions are in the
-[archive](http://archive.apache.org/dist/incubator/{{ site.data.project.unix_name }}/).
+[archive](http://archive.apache.org/dist/{{ site.data.project.incubator_slash_name }}/).
 If a download from a mirror fails, retry, and the second download will likely
 succeed.
 

@@ -23,6 +23,7 @@ incubator_slash_name: incubator/systemml
 description: Apache SystemML is a distributed and declarative machine learning platform.
 
 download: /download
+latest_release: 1.2.0
 
 dev_list: dev@systemml.incubator.apache.org
 dev_list_subscribe: dev-subscribe@systemml.incubator.apache.org
@@ -46,6 +47,7 @@ commits_list_archive_mailarchive: https://www.mail-archive.com/commits@systemml.
 commits_list_archive_markmail:
 
 jira: SYSTEMML
+github_project_name: incubator-systemml
 
 source_repository: https://git-wip-us.apache.org/repos/asf/incubator-systemml.git
 source_repository_mirror: https://github.com/apache/incubator-systemml
