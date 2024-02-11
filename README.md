@@ -1,41 +1,36 @@
-# Website
+# Apache Website Template
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This project contains a template website that aims to follow all the various required Apache Website Policies.
 
-### Installation
+This template was generated using [Docusaurus](https://docusaurus.io/).
 
-```
-$ yarn
-```
+## Usage
 
-### Local Development
+You can directly copy from the root path of this template repository to your website repository.
 
-```
-$ yarn start
-```
+> [!NOTE]
+> TODO: Integrate it with [template support of Docusaurus](https://docusaurus.io/docs/api/misc/create-docusaurus#git-strategy).
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Most of the configurations are inherited from Docusaurus https://docusaurus.io/docs/configuration.
 
-### Build
+Specificly, our template defines a few metadata fields to customize for every project:
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```typescript
+const projectName = "Template";
+const mainRepoName = "apache-website-template";
+const siteRepoName = "apache-website-template";
 ```
 
-Not using SSH:
+For example, Apache Fury can customize these fields as:
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```typescript
+const projectName = "Fury";
+const mainRepoName = "incubator-fury";
+const siteRepoName = "incubator-fury-site";
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+More placeholders and preset are under developed.
+
+## Deploy
+
+This template contains [a GitHub Actions workflow](.github/workflows/deploy.yml) to deploy the generated website content to the `asf-site` branch. It would work automatically, without any other ections required.
