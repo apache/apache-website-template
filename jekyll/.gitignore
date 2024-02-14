@@ -3,3 +3,8 @@
 .jekyll-metadata
 *.iml
 *~
+.sass-cache
+Gemfile.lock
+
+# generated site
+target
