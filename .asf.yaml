@@ -1,0 +1,26 @@
+github:
+  description: Apache Website Template
+  labels:
+    - apache
+    - website
+    - template
+    - docusaurus
+    - jekyll
+  features:
+    wiki: false
+    issues: true
+    projects: false
+  enabled_merge_buttons:
+    squash:  true
+    merge:   true
+    rebase:  true
+  protected_branches:
+    master: {}
+    docusaurus: {}
+    jekyll: {}
+
+notifications:
+  commits:      commits@community.apache.org
+  issues:       notifications@community.apache.org
+  pullrequests: notifications@community.apache.org
+  jira_options: link label
