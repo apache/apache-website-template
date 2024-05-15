@@ -1,6 +1,6 @@
 # Apache Website Template
 
-This project contains documents and templates to build a website that follows all the various required Apache Website Policies.
+This project contains documents and templates to help your project build a website that follows all the required Apache Website Policies.
 
 * [Docusaurus-based template](https://github.com/apache/apache-website-template/tree/docusaurus)
 * [Jekyll-based template](https://github.com/apache/apache-website-template/tree/jekyll)
